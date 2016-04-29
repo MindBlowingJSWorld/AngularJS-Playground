@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>AngularJS + Foundation Play ground</title>
+
+    <link rel="stylesheet" href="client_library/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="css/playground.css"/>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-mocks/angular-mocks.js"></script>
+
+    <script src="client_library/foundation/js/vendor/jquery.min.js"></script>
+    <script src="client_library/foundation/js/vendor/what-input.min.js"></script>
+    <script src="client_library/foundation/js/foundation.min.js"></script>
+
+    <script src="src/app/chapter1/test/_test.js"></script>
+    <script src="src/app/chapter1/test/testController.js"></script>
+    <script src="src/app/chapter1/test/testDirective.js"></script>
+
+    <script src="src/app/common/_common.js"></script>
+    <script src="src/app/common/helloWorld/helloWorldDirective.js"></script>
+
+
+    <script src="src/app/_angularJsPlayground.js"></script>
+
+</head>
+
+<body ng-app="playground">
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+                <ul>
+                    <li ui-sref-active="active"><a ui-sref="playground.chapter1">Chapter 1</a></li>
+                    <li ui-sref-active="active"><a ui-sref="playground.chapter2">Chapter 2</a></li>
+                    <li ui-sref-active="active"><a ui-sref="playground.chapter3">Chapter 3</a></li>
+                </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- Mobile Navigation -->
+                <div class="title-bar show-for-small-only">
+                    <div class="title-bar-left">
+                        <button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+                        <span class="title-bar-title">MENU</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="top-bar nav-desktop">
+                    <div class="wrap">
+                        <div class="top-bar-left">
+
+                            <h3 class="site-logo">Site Title</h3>
+
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="menu menu-desktop">
+                                <li ui-sref-active="active"><a ui-sref="playground.chapter1">Chapter 1</a></li>
+                                <li ui-sref-active="active"><a ui-sref="playground.chapter2">Chapter 2</a></li>
+                                <li ui-sref-active="active"><a ui-sref="playground.chapter3">Chapter 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="wrap">
+                        <div class="hero-main-content">
+                            <div ui-view></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+
+                    <div class="wrap row small-up-1 large-up-3">
+                        <div class="column">
+                            <h4>Contact info</h4>
+                            <hr>
+                            <a href="#"><span>Phone</span> 2344 234 234</a>
+                            <a href="#"><span>Email</span> info@company.com</a>
+                            <a href="#"><span>Address</span> 123 Street Centre</a>
+
+                        </div>
+
+                        <div class="columns">
+                            <h4>SiteMap</h4>
+                            <hr>
+                            <a href="#">About us</a>
+                            <a href="#">Services</a>
+                            <a href="#">Contact US</a>
+
+                        </div>
+
+                        <div class="columns">
+                            <h4>Social Media</h4>
+                            <hr>
+                            <a href="#">Twitter</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+
+                        </div>
+                    </div>
+
+                </footer>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $(document).foundation();
+    </script>
+
+</body>
+
+</html>

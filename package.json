@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-templatecache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-mocks": "^1.4.9",
+    "angular-resource": "^1.5.0",
+    "angular-messages": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.1"
+  }
+}
